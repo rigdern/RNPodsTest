@@ -1,4 +1,8 @@
 PODS:
+  - React (0.42.0):
+    - React/Core (= 0.42.0)
+  - react-native-maps (0.14.0):
+    - React
   - React/ART (0.42.0):
     - React/Core
   - React/Core (0.42.0):
@@ -36,6 +40,7 @@ PODS:
   - Yoga (0.42.0.React)
 
 DEPENDENCIES:
+  - react-native-maps (from `../node_modules/react-native-maps`)
   - React/ART (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/RCTActionSheet (from `../node_modules/react-native`)
@@ -55,13 +60,16 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   React:
     :path: ../node_modules/react-native
+  react-native-maps:
+    :path: ../node_modules/react-native-maps
   Yoga:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
   React: 8ec97f0d79ba31892c526cf56425937926cc9b48
+  react-native-maps: c0145d0e4c31e6ce48cbe124543a4331baecfc7b
   Yoga: 4183cc70cae189d73f996b1e40c3078aca9f96ef
 
-PODFILE CHECKSUM: c3e85047b6f81375fa8973eac63d541ff569bdd4
+PODFILE CHECKSUM: f43e03656481008a329aaa9863b807b13149dba9
 
 COCOAPODS: 1.2.0
