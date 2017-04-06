@@ -1,0 +1,23 @@
+react_path = '../node_modules/react-native'
+yoga_path = File.join(react_path, 'ReactCommon/yoga')
+
+target 'RNPodsTest' do
+  pod 'React', :path => react_path, :subspecs => [
+    'Core',
+    'ART',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'RCTLinkingIOS'
+  ]
+  pod 'Yoga', :path => yoga_path
+end
+
